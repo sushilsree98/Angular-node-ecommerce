@@ -1,0 +1,20 @@
+<form [formGroup]="userForm" (submit)="mySubmit();">
+  <div class="form-group" >
+    <label for="exampleInputEmail1">Product name</label>
+    <input type="text" class="form-control" formControlName="productName" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Product Id</label>
+    <input type="number" class="form-control"  formControlName="productId">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Product size</label>
+    <input type="number" class="form-control"  formControlName="productSize">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Product color</label>
+    <input type="text" class="form-control" formControlName="productColor">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="button" class="btn btn-light" name="button" routerLink="/result">Redirect</button>
+</form>
